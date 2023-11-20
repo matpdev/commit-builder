@@ -3,12 +3,6 @@ use std::process::{ Command, Output };
 use dialoguer::Input;
 
 fn main() {
-    println!("Hello, world!");
-
-    let da: String = Input::new().with_prompt("Olá, digite seu nome").interact_text().unwrap();
-
-    println!("{}", da);
-
     let items = vec!["HOTFIX", "FIX", "UPDATE", "RELEASE", "CI", "CUSTOM"];
     let mut commit = String::new();
 
